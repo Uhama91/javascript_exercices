@@ -35,8 +35,13 @@
     // Add your code here
     const chooseName = (randomName) => {
       randomName = Math.floor(Math.random() * names.length);
-      return (para.textContent = names[randomName]);
+      return names[randomName];
     };
+    para.textContent = chooseName();
+
+    addEventListener("click", () => {
+      para.textContent = chooseName();
+    });
 
     // Don't edit the code below here!
 

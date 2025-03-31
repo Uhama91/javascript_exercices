@@ -36,7 +36,12 @@
     const color = "blue";
 
     // Add your code here
+    const drawing = (x, y, width, height, color) => {
+      ctx.fillStyle = color;
+      ctx.fillRect(x, y, width, height);
+    };
 
+    drawing(10, 10, 100, 75, "yellow");
     // Don't edit the code below here!
 
     const section = document.querySelector("section");
